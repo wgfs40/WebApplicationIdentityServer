@@ -27,10 +27,5 @@ namespace WebApplicationIdentityServer2.Entities
             ClaimType = claimType;
             ClaimValue = claimValue;
         }
-
-        public UserClaim()
-        {
-
-        }
     }
 }

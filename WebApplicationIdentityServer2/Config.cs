@@ -83,10 +83,12 @@ namespace WebApplicationIdentityServer2
                      ClientName = "Image Gallery",
                      ClientId = "imagegalleryclient",
                      AllowedGrantTypes = GrantTypes.Hybrid,
-                     RedirectUris = new List<string>(){
+                     //identitytokenlifetime = 300,
+                     //authorizationcodelifetime = 300,
+                     AccessTokenLifetime = 120,
+                    RedirectUris = new List<string>(){
                          "https://localhost:44358/signin-oidc"
                      },
-
                      RequireConsent = false,
                      AllowedScopes =
                     {
